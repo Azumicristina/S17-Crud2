@@ -1,0 +1,11 @@
+drop database S17Crud1;
+create database S17Crud1;
+use S17Crud1;
+create table hola( 
+id int primary key auto_increment,		
+		Nombre varchar(50),
+        Telefono varchar(20)
+);
+insert into hola(Nombre, Telefono) values ("Azumi", "+51 932 240 871"),
+											 ("Brayan", "+51 921 071 231");
+select * from hola;
