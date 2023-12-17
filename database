@@ -1,0 +1,14 @@
+drop database S17Crud2;
+create database S17Crud2;
+use S17Crud2;
+create table prac( 
+id int primary key auto_increment,		
+		Nombre varchar(50),
+        Edad varchar(20),
+        DNI varchar(20),
+        Direccion varchar(255),
+        Telefono varchar(20)
+);
+insert into prac(Nombre, Edad, DNI, Direccion, Telefono) values ("Azumi", "17", "60744966", "Halla porvenir","+51 932 240 871"),
+											 ("Brayan", "21", "65428793", "Las palmas", "+51 921 071 231");
+select * from prac;
